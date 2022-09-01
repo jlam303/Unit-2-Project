@@ -86,8 +86,8 @@ else
 //This outputs the binary version
 console.log(`The binary of ${y} is ${digit1}${digit2}${digit3}${digit4} ${digit5}${digit6}${digit7}${digit8}`)
 //Program takes numbers 1, 2, 3, and 4, and uses these values and counters to properly form a hexidecimal.
-let number1 = Math.floor(x/16);
-let number2 = x%16;
+let number1 = Math.floor(y/16);
+let number2 = y%16;
 let number3 = Math.floor(number1/16);
 let number4 = number1%16;
 let counter = 0;
@@ -151,4 +151,4 @@ while(number4 > 9)
     }
 }
 //This outputs the hexidecimal version
-console.log(`The hexadecimal of ${x} is ${number4}${number2}`)
+console.log(`The hexadecimal of ${y} is ${number4}${number2}`)
