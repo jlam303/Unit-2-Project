@@ -85,70 +85,61 @@ else
 }
 //This outputs the binary version
 console.log(`The binary of ${y} is ${digit1}${digit2}${digit3}${digit4} ${digit5}${digit6}${digit7}${digit8}`)
-//Program takes numbers 1, 2, 3, and 4, and uses these values and counters to properly form a hexidecimal.
+//Program takes numbers 1, 2, 3, and 4, and uses these values and to properly form a hexidecimal.
 let number1 = Math.floor(y/16);
 let number2 = y%16;
+console.log(number2)
 let number3 = Math.floor(number1/16);
 let number4 = number1%16;
-let counter = 0;
 //Converting the numbers into letters to fit base 16 inefficiently
-while(number2 > 9)
-{
-    number2--;
-    counter++;
-    if(counter = 1)
+    if(number2 == 15)
     {
         number2 = "f";
     }
-    else if(counter = 2)
+    else if(number2 == 14)
     {
         number2 = "e";
     }
-    else if(counter = 3)
+    else if(number2 == 13)
     {
         number2 = "d";
     }
-    else if(counter = 4)
+    else if(number2 == 12)
     {
         number2 = "c";
     }
-    else if(counter = 5)
+    else if(number2 == 11)
     {
         number2 = "b";
     }
-    else if(counter = 6)
+    else if(number2 == 10)
     {
         number2 = "a";
     }
-}
-while(number4 > 9)
-{
-    number4--;
-    counter++;
-    if(counter = 1)
+
+    if(number4 == 15)
     {
         number4 = "f";
     }
-    else if(counter = 2)
+    else if(number4 == 14)
     {
         number4 = "e";
     }
-    else if(counter = 3)
+    else if(number4 == 13)
     {
         number4 = "d";
     }
-    else if(counter = 4)
+    else if(number4 == 12)
     {
         number4 = "c";
     }
-    else if(counter = 5)
+    else if(number4 == 11)
     {
         number4 = "b";
     }
-    else if(counter = 6)
+    else if(number4 == 10)
     {
         number4 = "a";
     }
-}
 //This outputs the hexidecimal version
 console.log(`The hexadecimal of ${y} is ${number4}${number2}`)
